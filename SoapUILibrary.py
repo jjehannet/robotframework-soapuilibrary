@@ -96,3 +96,21 @@ class SoapUILibrary:
     def soapui_stop_mock_service(self):
         """ Stops the mock service """
         self.__mockrunner.stopAll()
+
+    def soapui_set_endpoint(self, endpoint):
+        self.__runner.setEndpoint(endpoint)
+
+    def soapui_set_host(self, host):
+        self.__runner.setHost(host)
+
+    def soapui_set_password(self, password):
+        self.__runner.setPassword(password)
+
+    def soapui_set_username(self, username):
+        self.__runner.setUsername(username)
+
+    def soapui_set_domain(self, domain):
+        self.__runner.setDomain(domain)
+
+    def soapui_set_project_password(self, password):
+        self.__runner.setProjectPassword(password)
